@@ -21,3 +21,5 @@ in the variable number, followed by Battery street, followed by a new line
  in the variable str, followed by its first 9 characters.
 
 - Task7 : Complete this source code to print Welcome to Holberton School!
+
+- Task8: Copy - Cut - Paste / indexing and slicing string
