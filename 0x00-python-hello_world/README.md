@@ -34,4 +34,4 @@ in the variable number, followed by Battery street, followed by a new line
 The Python file name will be stored in the environment variable $PYFILE
 
 - Task12: Write the Python function def magic_calculation(a, b): that does exactly the same 
-as the following Python bytecode
+as the following Python bytecode.
