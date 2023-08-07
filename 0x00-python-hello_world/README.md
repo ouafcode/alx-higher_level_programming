@@ -25,3 +25,5 @@ in the variable number, followed by Battery street, followed by a new line
 - Task8: Copy - Cut - Paste / indexing and slicing strinig
 
 - Task9: Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
+
+- Task10: Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
