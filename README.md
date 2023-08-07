@@ -1,5 +1,5 @@
-##PYTHON HELLO ,WORLD
-###Learning Objectives
+## PYTHON HELLO ,WORLD
+### Learning Objectives
  - Why Python programming is awesome
  - Who created Python
  - Who is Guido van Rossum
@@ -12,7 +12,7 @@
  - What is the official Python coding style and how to check your code with pycodestyle 
 
 ## REQUIREMENTS
-''''
+````
 - Allowed editors: vi, vim, emacs
 - All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
 - All your files should end with a new line
@@ -22,4 +22,4 @@
 - Your code should use the pycodestyle (version 2.8.*)
 - All your files must be executable
 - The length of your files will be tested using wc
-''''
+```
