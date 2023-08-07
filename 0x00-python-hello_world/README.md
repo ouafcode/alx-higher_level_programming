@@ -22,4 +22,6 @@ in the variable number, followed by Battery street, followed by a new line
 
 - Task7 : Complete this source code to print Welcome to Holberton School!
 
-- Task8: Copy - Cut - Paste / indexing and slicing string
+- Task8: Copy - Cut - Paste / indexing and slicing strinig
+
+- Task9: Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
