@@ -32,3 +32,6 @@ in the variable number, followed by Battery street, followed by a new line
 - Task11: Write a script that compiles a Python script file.
 
 The Python file name will be stored in the environment variable $PYFILE
+
+- Task12: Write the Python function def magic_calculation(a, b): that does exactly the same 
+as the following Python bytecode
