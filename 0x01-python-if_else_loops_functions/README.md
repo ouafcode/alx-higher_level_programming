@@ -18,3 +18,5 @@
 - Task9: Write a function that prints the last digit of a number.
 
 - Task10: Write a function that adds two integers and returns the result.
+
+- TASK11: Write a function that computes a to the power of b and return the value.
