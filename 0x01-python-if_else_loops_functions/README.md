@@ -12,3 +12,5 @@
 - TASK6: Write a program that prints all possible different combinations of two digits.
 
 - Task7: Write a function that checks for lowercase character.
+
+- Task8: Write a function that prints a string in uppercase followed by a new line.
