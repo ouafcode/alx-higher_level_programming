@@ -7,3 +7,5 @@
 - Task3 : Write a program that prints the number of and the list of its arguments.i
 
 - Task4 : Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).
+
+- Task5 : Write a program that imports the variable a from the file variable_load_5.py and prints its value.
