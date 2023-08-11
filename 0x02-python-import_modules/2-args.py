@@ -3,7 +3,7 @@ if __name__ == "__main__":
     import sys
     n = len(sys.argv) - 1
     if n == 0:
-        print("{} arguments".format(n))
+        print("{} arguments.".format(n))
     elif n == 1:
         print("{} argument:".format(n))
         print("{}: {}".format(n, sys.argv[1]))
