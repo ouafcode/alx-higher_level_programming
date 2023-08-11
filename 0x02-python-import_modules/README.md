@@ -4,4 +4,6 @@
 
 - Task2 : Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
 
-- Task3 : Write a program that prints the number of and the list of its arguments.
+- Task3 : Write a program that prints the number of and the list of its arguments.i
+
+- Task4 : Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).
