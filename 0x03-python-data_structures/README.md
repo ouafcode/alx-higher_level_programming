@@ -21,3 +21,5 @@
 - Task10 : Write a function that finds all multiples of 2 in a list.
 
 - Task11 : Write a function that deletes the item at a specific position in a list.
+
+- Task12 : Complete the source code in order to switch value of a and b
