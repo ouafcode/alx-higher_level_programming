@@ -9,3 +9,5 @@
 - Task4 : Write a function that replaces an element in a list at a specific position without modifying the original list (like in C).
 
 - Task5 : Write a function that removes all characters c and C from a string.
+
+- Task6 : Write a function that prints a matrix of integers.
