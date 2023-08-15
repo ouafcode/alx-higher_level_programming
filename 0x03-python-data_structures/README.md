@@ -13,3 +13,5 @@
 - Task6 : Write a function that prints a matrix of integers.
 
 - Task7 : Write a function that adds 2 tuples.
+
+- Task8 : Write a function that returns a tuple with the length of a string and its first character.
