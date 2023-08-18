@@ -9,3 +9,5 @@
 - Task3: Write a function that returns a set of common elements in two sets.
 
 - Task4: Write a function that returns a set of all elements present in only one set.
+
+- Task5: Write a function that returns the number of keys in a dictionary.
