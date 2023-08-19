@@ -17,3 +17,5 @@
 - Task7: Write a function that deletes a key in a dictionary.
 
 - Task8: Write a function that returns a key with the biggest integer value.
+
+- Task9: Write a function that returns a list with all values multiplied by a number without using any loops.
