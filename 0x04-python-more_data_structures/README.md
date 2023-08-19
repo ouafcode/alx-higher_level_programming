@@ -13,3 +13,5 @@
 - Task5: Write a function that returns the number of keys in a dictionary.
 
 - Task6: Write a function that replaces or adds key/value in a dictionary.
+
+- Task7: Write a function that deletes a key in a dictionary.
