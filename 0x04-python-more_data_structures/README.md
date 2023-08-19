@@ -15,3 +15,5 @@
 - Task6: Write a function that replaces or adds key/value in a dictionary.
 
 - Task7: Write a function that deletes a key in a dictionary.
+
+- Task8: Write a function that returns a key with the biggest integer value.
