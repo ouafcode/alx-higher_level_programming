@@ -11,3 +11,5 @@
 - Task4: Write a function that returns a set of all elements present in only one set.
 
 - Task5: Write a function that returns the number of keys in a dictionary.
+
+- Task6: Write a function that replaces or adds key/value in a dictionary.
