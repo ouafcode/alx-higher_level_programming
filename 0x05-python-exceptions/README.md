@@ -13,3 +13,5 @@
 - Task5: Write a function that raises a type exception.
 
 - Task6: Write a function that raises a name exception with a message.
+
+- Task7: Write a function that prints an integer.
