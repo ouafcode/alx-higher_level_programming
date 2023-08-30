@@ -11,3 +11,5 @@
 - Task4: Write a function that divides element by element 2 lists.
 
 - Task5: Write a function that raises a type exception.
+
+- Task6: Write a function that raises a name exception with a message.
