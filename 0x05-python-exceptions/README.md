@@ -15,3 +15,5 @@
 - Task6: Write a function that raises a name exception with a message.
 
 - Task7: Write a function that prints an integer.
+
+- Task8: Write a function that executes a function safely.
