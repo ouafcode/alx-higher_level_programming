@@ -4,16 +4,16 @@
 
 class Square:
     """ Defining a class square """
+
+
     def __init__(self, size=0, position=(0, 0)):
-        """ Initializing a square class
-        Args: size=0: size of the square
-         """
+        """ Initializes the data """
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """ Getting the size of the square """
+        """ Return the size of the square """
         return self.__size
 
     @size.setter
