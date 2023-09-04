@@ -1,5 +1,7 @@
 ### Tasks
 
-- Task1: Write an empty class Square that defines a square
+- Task0: Write an empty class Square that defines a square
+
+- Task1: Write a class Square that defines a square by: (based on 0-square.py)
 
 - Task2: Write a class Square that defines a square by: (based on 1-square.py)
