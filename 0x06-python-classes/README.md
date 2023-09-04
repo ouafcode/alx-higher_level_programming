@@ -7,3 +7,5 @@
 - Task2: Write a class Square that defines a square by: (based on 1-square.py)
 
 - Task3: Write a class Square that defines a square by: (based on 2-square.py)
+
+- Task4: Write a class Square that defines a square by: (based on 2-square.py)
