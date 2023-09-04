@@ -4,7 +4,7 @@
 
 class Square:
     """ Create class for defining square """
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """ Initialising attribute instance
         Args: size: size of square
         """
