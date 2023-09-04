@@ -11,3 +11,5 @@
 - Task4: Write a class Square that defines a square by: (based on 3-square.py)
 
 - Task5: Write a class Square that defines a square by: (based on 4-square.py)
+
+- Task6: Write a class Square that defines a square by: (based on 5-square.py)
