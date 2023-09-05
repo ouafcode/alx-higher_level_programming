@@ -50,19 +50,19 @@ class SinglyLinkedList:
             value (Node): the new node to insert
         """
 
-    new = Node(value)
-    if self.__head is None:
-        new.next_node = None
-        self.__head = new
-    elif self.__head.data > value:
-        new.next_node = self.__head
-        self.__head = new
-    else:
-        tmp = self.__head
-        while (tmp.next_node is not None and tmp.next_node_data < value):
-            tmp = tmp.next_node
-        new.next_node = tmp.next_node
-        tmp.next_node = new
+        new = Node(value)
+        if self.__head is None:
+            new.next_node = None
+            self.__head = new
+        elif self.__head.data > value:
+            new.next_node = self.__head
+            self.__head = new
+        else:
+            tmp = self.__head
+            while (tmp.next_node is not None and tmp.next_node_data < value):
+                tmp = tmp.next_node
+            new.next_node = tmp.next_node
+            tmp.next_node = new
 
     def __str__(self):
         """ Define the print() representation of SinglyLinkedList """
