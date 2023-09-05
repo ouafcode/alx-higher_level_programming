@@ -13,3 +13,5 @@
 - Task5: Write a class Square that defines a square by: (based on 4-square.py)
 
 - Task6: Write a class Square that defines a square by: (based on 5-square.py)
+
+- Task7:  write a class SinglyLinkedList that defines a singly linked list
