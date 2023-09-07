@@ -4,4 +4,6 @@
 class Regtangle:
     """ Class that defines a rectangle """
 
-    pass
+    def __init__(self):
+        """ To Initialize Object """
+            pass
