@@ -74,7 +74,7 @@ class Rectangle:
         elif rect_2.area() > rect_1.area():
             return rect_2
 
-        else:
+        else rect_1.area() == rect_2.area():
             return rect_1
 
     def __del__(self):
