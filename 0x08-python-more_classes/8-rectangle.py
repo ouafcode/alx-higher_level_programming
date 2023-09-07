@@ -68,14 +68,11 @@ class Rectangle:
         elif not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
 
-        elif rect_1.area() > rect_2.area():
+        elif rect_1.area() >= rect_2.area():
             return rect_1
 
-        elif rect_2.area() > rect_1.area():
+        else:
             return rect_2
-
-        else rect_1.area() == rect_2.area():
-            return rect_1
 
     def __del__(self):
         print("Bye rectangle...")
