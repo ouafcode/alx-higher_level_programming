@@ -76,7 +76,8 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        cls.width == cls.height == cls.size
+        """returns a new Rectangle instance """
+        return (cls(size, size))
 
     def __del__(self):
         print("Bye rectangle...")
