@@ -1,0 +1,109 @@
+Test all delimeter with spaces at ends:
+>>> text_indentation("Salam   :     ALX    ?    sofware.    tech     ")
+Hello:
+<BLANKLINE>
+ALX?
+<BLANKLINE>
+sofware.
+<BLANKLINE>
+tech
+Test just delimeter:
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+Test string with the spaces:
+>>> text_indentation("    ALX")
+ALX
+Test just delimeters:
+>>> text_indentation("  ?  ")
+?
+<BLANKLINE>
+Test nonindent inside indent
+>>> text_indentation("?Salam.")
+?
+<BLANKLINE>
+Salam.
+<BLANKLINE>
+Test existing newline:
+>>> text_indentation("?\n\n.\n\n:")
+?
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+.
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+:
+<BLANKLINE>
+Test none:
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+Test num:
+>>> text_indentation(43)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+Test string with some spaces:
+>>> text_indentation("        ALX          ")
+ALX
+Test string with an empty string:
+>>> text_indentation("")
+Test string with an empty string (2):
+>>> text_indentation("      ")
+Test:
+>>> text_indentation("Salam: ALX")
+Salam:
+<BLANKLINE>
+ALX
+Test delimeters with spaces:
+>>> text_indentation("      ?:  :  ")
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+:
+<BLANKLINE>
+Test newline:
+>>> text_indentation("\n")
+<BLANKLINE>
+Test newlines:
+>>> text_indentation("\n\n")
+<BLANKLINE>
+<BLANKLINE>
+Test newline 3:
+>>> text_indentation("Salam\n\n")
+Salam
+<BLANKLINE>
+Import module:
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+Test no delimeters:
+>>> text_indentation("Salam ALX")
+Salam ALX
+Test string with spaces:
+>>> text_indentation("ALX    ")
+ALX
+Test all delimeters!:
+>>> text_indentation("Salam: ALX? software. tech")
+Salam:
+<BLANKLINE>
+ALX?
+<BLANKLINE>
+software.
+<BLANKLINE>
+tech
+Test all delimeters with some spaces:
+>>> text_indentation("salam   :   ALX  ?  software.  tech")
+salam:
+<BLANKLINE>
+ALX?
+<BLANKLINE>
+software.
+<BLANKLINE>
+tech
