@@ -1,7 +1,30 @@
+===========================
+How to Use 0-add_integer.py
+=dd_integer = __import__('0-add_integer').add_integer
+
+print(add_integer(1, 2))
+print(add_integer(100, -2))
+print(add_integer(2))
+print(add_integer(100.3, -2))
+try:
+    print(add_integer(4, "School"))
+except Exception as e:
+    print(e)
+try:
+    print(add_integer(None))
+except Exception as e:
+    print(e)
+==========================
+
+
 this module define integer addition.
 
 Usage
 =====
+
+``add_integer(...)``` returns the addition of its two arguments. For numbers,
+that value is equivalent to using the ``+`` operator.
+
 
 >>> add_integer = __import__('0-add_integer').add_integer
 >>> add_integer(2, 3)
@@ -34,17 +57,17 @@ TypeError: b must be an integer
 Traceback (most recent call last):
 TypeError: a must be an integer
 
->>> add_integer(float('txt'))
+>>> add_integer(float('inf'))
 Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
 
->>> add_integer(2, float('txt')
+>>> add_integer(2, float('inf'))
 Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
 
 >>> add_integer(float('nan'))
 Traceback (most recent call last):
-OverflowError: cannot convert float infinity to integer
+ValueError: cannot convert float NaN to integer
 
 >>> add_integer(2, float('nan'))
 Traceback (most recent call last):
