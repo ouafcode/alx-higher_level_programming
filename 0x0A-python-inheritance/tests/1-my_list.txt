@@ -12,43 +12,21 @@ Usage
 >>> my_list.append(2)
 >>> my_list.append(3)
 >>> my_list.append(5)
->>> print(my_list)
 >>> my_list.print_sorted()
->>> print(my_list)
-[1, 4, 2, 3, 5]
 [1, 2, 3, 4, 5]
+
+>>> print(my_list)
 [1, 4, 2, 3, 5]
 
-==========================================================
-if we append a negative number
+>>> my_list = MyList("hello")
 
->>> MyList = __import__('1-my_list').MyList
->>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.append(-4)
->>> my_list.append(2)
->>> my_list.append(3)
->>> my_list.append(5)
->>> print(my_list)
+>>> my_list
+['h', 'e', 'l', 'l', 'o']
+
 >>> my_list.print_sorted()
->>> print(my_list)
-[1, -4, 2, 3, 5]
-[-4, 1, 2, 3, 5]
-[1, -4, 2, 3, 5]
+['e', 'h', 'l', 'l', 'o']
 
-===========================================================
-if we append a string
-
->>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.append("school")
->>> my_list.append(2)
->>> my_list.append(3)
->>> my_list.append(5)
->>> print(my_list)
+
 >>> my_list.print_sorted()
->>> print(my_list)
-[1, 'school', 2, 3, 5]
-Traceback (most recent call last):
-TypeError: '<' not supported between instances of 'str' and 'int'
+[]
