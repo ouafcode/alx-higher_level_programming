@@ -1,11 +1,11 @@
 ====================================
-   Module ``-base_geometry.py``
+   Module ``7-base_geometry``
 ====================================
 
 Usage
 =====
 
-`` Class BaseGeometry ``
+``Class BaseGeometry``
 
 Import class
 
@@ -13,6 +13,7 @@ Import class
 >>> bg = BaseGeometry()
 
 >>> bg.integer_validator("my_int", 12)
+
 >>> bg.integer_validator("width", 89)
 
 >>> bg.area()
@@ -29,7 +30,7 @@ ValueError: distance must be greater than 0
 
 >>> bg.integer_validator("age", 0)
 Traceback (most recent call last):
-ValueError: distance must be greater than 0
+ValueError: age must be greater than 0
 
 >>> bg.integer_validator("avr", 7.8)
 Traceback (most recent call last):
