@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ define class MyInt that inherits from int """
 
+
 class MyInt(int):
     """ define class MyInt that inherits from int """
     def __init__(self, value):
