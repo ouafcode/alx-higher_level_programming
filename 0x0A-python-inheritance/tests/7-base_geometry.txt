@@ -33,7 +33,7 @@ ValueError: distance must be greater than 0
 
 >>> bg.integer_validator("avr", 7.8)
 Traceback (most recent call last):
-TypeError: name must be an integer
+TypeError: avr must be an integer
 
 >>> bg.integer_validator("distance")
 Traceback (most recent call last):
