@@ -20,4 +20,4 @@ class Student():
     def reload_from_json(self, json):
         """ replaces all attributes """
         for att in json:
-            self.__dict__.update({i: json[i]})
+            self.__dict__.update({att: json[att]})
