@@ -77,3 +77,17 @@ class Rectangle(Base):
     def __str__(self):
         return ("[Rectangle] (" + str(self.id) + ") " + str(self.x) + "/" +
                 str(self.y) + " - " + str(self.width) + "/" + str(self.height))
+
+    def update(self, *args):
+        """ update class Rectangle attribut """
+        for i in range(len(args)):
+            if i == 0:
+                self.id = args[i]
+            elif i == 1:
+                self.width = args[i]
+            elif i == 2:
+                self.height = args[i]
+            elif i == 3:
+                self.x = args[i]
+            elif i == 4:
+                self.y = args[i]
