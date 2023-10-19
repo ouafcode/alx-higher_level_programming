@@ -71,4 +71,4 @@ class Rectangle(Base):
 
     def display(self):
         """ display the character # """
-        return ((("#" * self.width) + "\n") * self.height)[:-1]
+        print((("#" * self.width) + "\n") * self.height, end="")
