@@ -32,7 +32,7 @@ class Square(Rectangle):
                 if i == 0:
                     self.id = args[0]
                 elif i == 1:
-                    self.width = self.height =  args[1]
+                    self.width = self.height = args[1]
                 elif i == 2:
                     self.x = args[2]
                 elif i == 3:
