@@ -27,18 +27,11 @@ class Base():
     @classmethod
     def save_to_file(cls, list_objs):
         """ write json string of object in to file """
-        if (type(list_objs) != list and list_objs is not None
-           or not all(isinstance(x, cls) for x in list_objs)):
-            raise TypeError("list_objs must be list of objects")
+        if list_objs is None or list_objs == []:
+            ljson = "[]"
+        else:
+            ljson = cls.to_json_string([x.to_dictionary() for x in list_objs])
 
-        name_file = cls.__name__+".csv"
+        name_file = cls.__name__+".json"
         with open(name_file, 'w') as f:
-            if list_objs is not None:
-                list_objs = [x.to_dictionary() for x in list_objs]
-                if cls.__name__ == 'Rectangle':
-                    fields = ['id', 'width', 'height', 'x', 'y']
-                elif cls.__name__ == 'Square':
-                    fields = ['id', 'size', 'x', 'y']
-                writer = csv.DictWriter(f, fieldnames=fields)
-                writer.writeheader()
-                writer.writerows(list_objs)
+            f.write(ljson)
