@@ -111,3 +111,40 @@ class Base():
                                 setattr(x, field[j], int(e))
                         loader.append(x)
         return loader
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """to opens a window and draws all the instances"""
+
+        import turtle
+        import time
+        from random import randrange
+
+        p = turtle.Turtle()
+        p.color("beige")
+        turtle.bgcolor("violet")
+        p.shape("square")
+        p.pensize(8)
+
+        for x in (list_rectangles + list_squares):
+            p.penup()
+            p.setpos(0, 0)
+            turtle.Screen().colormode(255)
+            p.pencolor((randrange(255), randrange(255), randrange(255)))
+            Base.draw_rect(p, x)
+            time.sleep(1)
+        time.sleep(5)
+
+    @staticmethod
+    def draw_rect(p, rect):
+        """ draws a Rectangle or Square."""
+
+        p.penup()
+        p.setpos(rect.x, rect.y)
+        p.pendown()
+        p.forward(rect.width)
+        p.left(90)
+        p.forward(rect.height)
+        p.left(90)
+        p.forward(rect.width)
+        p.left(90)
