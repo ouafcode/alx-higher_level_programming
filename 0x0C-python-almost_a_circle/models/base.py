@@ -40,7 +40,7 @@ class Base():
     def from_json_string(json_string):
         """ returns the list of the JSON string """
         new = []
-        if json_string is not None or json_string != '':
+        if json_string is not None and json_string != '':
             if type(json_string) != str:
                 raise TypeError("json_string must be a string")
             new = json.loads(json_string)
