@@ -108,6 +108,6 @@ class Base():
                         x = cls(1, 1)
                         for j, e in enumerate(row):
                             if e:
-                                setattr(x, fields[j], int(e))
+                                setattr(x, field[j], int(e))
                         loader.append(x)
         return loader
