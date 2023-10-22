@@ -69,3 +69,23 @@ class Base():
                 for x in dicts:
                     loader.append(cls.create(**x))
         return loader
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """ serializes and deserializes in CSV """
+        if(type(list_objs) != list and
+           list_objs is not None or
+           not all(isinstance(i, cls) for i in list_objs)):
+            raise TypeError("list_objs must be a list of instance")
+
+        file_name = cls.__name__ + ".csv"
+        with open(file_name, 'w') as f:
+            if list_objs is not None:
+                list_objs = [i.to_dictionary() for i in list_objs]
+                if cls.__name__ == 'Rectangle':
+                    field = ['id', 'width', 'height', 'x', 'y']
+                elif cls.__name__ == 'Square':
+                    field = ['id', 'size', 'x', 'y']
+                writer = csv.DictWriter(f, fieldnames=field)
+                writer.writeheader()
+                writer.writerows(list_objs)
