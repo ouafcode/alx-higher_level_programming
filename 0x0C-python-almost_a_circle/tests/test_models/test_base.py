@@ -323,12 +323,12 @@ class TestBase(unittest.TestCase):
         with self.assertRaises(TypeError) as x:
             Rectangle.save_to_file_csv([3, 4])
         self.assertEqual(
-            "list_objs must be a list of instances", str(
+            "list_objs must be a list of instance", str(
                 x.exception))
         with self.assertRaises(TypeError) as x:
             Rectangle.save_to_file_csv(5.9)
         self.assertEqual(
-            "list_objs must be a list of instances", str(
+            "list_objs must be a list of instance", str(
                 x.exception))
 
     def test_20_2(self):

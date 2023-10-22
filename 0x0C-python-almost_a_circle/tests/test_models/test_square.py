@@ -136,14 +136,14 @@ class TestSquare(unittest.TestCase):
         x1 = Square(10, 2, 1)
         x1_dictionary = x1.to_dictionary()
         s_dictionary = {'x': 2, 'y': 1, 'id': 1, 'size': 10}
-        self.assertEqual(len(s1_dictionary), len(s_dictionary))
-        self.assertEqual(type(s1_dictionary), dict)
+        self.assertEqual(len(x1_dictionary), len(s_dictionary))
+        self.assertEqual(type(x1_dictionary), dict)
         x2 = Square(1, 1)
-        x2.update(**s1_dictionary)
+        x2.update(**x1_dictionary)
         x2_dictionary = x2.to_dictionary()
         self.assertEqual(len(x1_dictionary), len(x2_dictionary))
         self.assertEqual(type(x2_dictionary), dict)
-        self.assertFalse(s1 == s2)
+        self.assertFalse(x1 == x2)
 
     def test_14_1(self):
         """Test to_dictionary  method with incorrect args."""
