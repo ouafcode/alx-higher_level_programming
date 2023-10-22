@@ -133,7 +133,7 @@ class Base():
             p.setpos(0, 0)
             turtle.Screen().colormode(255)
             p.pencolor((randrange(255), randrange(255), randrange(255)))
-            Base.draw_rect(p, x)
+            Base.draw_open(p, x)
             time.sleep(1)
         time.sleep(5)
 
