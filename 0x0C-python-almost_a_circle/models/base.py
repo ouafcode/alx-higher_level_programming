@@ -138,7 +138,7 @@ class Base():
         time.sleep(5)
 
     @staticmethod
-    def draw_rect(p, rect):
+    def draw_open(p, rect):
         """ draws a Rectangle or Square."""
 
         p.penup()
