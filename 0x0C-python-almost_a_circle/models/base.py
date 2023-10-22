@@ -55,3 +55,17 @@ class Base():
             dummy = cls(1)
         dummy.update(**dictionary)
         return (dummy)
+
+    @classmethod
+    def load_from_file(cls):
+        """ returns a list of instances """
+        loader = []
+        dicts = []
+        file_name = cls.__name__+'.json'
+        if os.path.exists(file_name):
+            with open(file_name, 'r') as f:
+                strg = f.read()
+                dicts = cls.from_json_string(strg)
+                for x in dicts:
+                    loader.append(cls.create(**x))
+        return loader
