@@ -8,7 +8,6 @@ class Rectangle():
         self.width = width
         self.height = height
 
-    """ Private instance attribute width """
     @property
     def width(self):
         return self.__width
@@ -21,7 +20,6 @@ class Rectangle():
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    """ Private instance attribute height """
     @property
     def height(self):
         return self.__height
@@ -35,22 +33,18 @@ class Rectangle():
         self.__height = value
 
     def area(self):
-        """ define rectangle area """
         return (self.width * self.height)
 
     def perimeter(self):
-        """ define rectangle perimeter """
         if self.width == 0 or self.height == 0:
             return (0)
         else:
             return ((self.width + self.height) * 2)
 
-    """ print the rectangle with the character # """
     def __str__(self):
         if self.height == 0 or self.width == 0:
             return ("")
         return ((("#" * self.width) + "\n") * self.height)[:-1]
 
-    """ return strinf representation of Rectangle """
     def __repr__(self):
         return("Rectangle({}, {})".format(self.width, self.height))
