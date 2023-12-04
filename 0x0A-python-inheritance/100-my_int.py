@@ -3,6 +3,7 @@
 
 
 class MyInt(int):
+    """ define MyInt ingerits from int """
     def __ne__(self, other):
         return (True)
 
