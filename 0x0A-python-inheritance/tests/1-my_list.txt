@@ -1,0 +1,94 @@
+the ''1-my_list'' module
+==========================
+
+Using ''MyList'' Class
+----------------------
+
+this function for prints list sorted
+
+>>> MyList = __import__('1-my_list').MyList
+
+for integers:
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+for floats:
+
+>>> my_list = MyList()
+>>> my_list.append(1.2)
+>>> my_list.append(3.4)
+>>> my_list.append(2.2)
+>>> my_list.append(5.1)
+>>> my_list.append(6.1)
+>>> print(my_list)
+[1.2, 3.4, 2.2, 5.1, 6.1]
+>>> my_list.print_sorted()
+[1.2, 2.2, 3.4, 5.1, 6.1]
+>>> print(my_list)
+[1.2, 3.4, 2.2, 5.1, 6.1]
+
+for floats and int
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(3.4)
+>>> my_list.append(2)
+>>> my_list.append(5.1)
+>>> my_list.append(6)
+>>> print(my_list)
+[1, 3.4, 2, 5.1, 6]
+>>> my_list.print_sorted()
+[1, 2, 3.4, 5.1, 6]
+>>> print(my_list)
+[1, 3.4, 2, 5.1, 6]
+
+for negative numbers
+
+>>> my_list = MyList()
+>>> my_list.append(-1)
+>>> my_list.append(3)
+>>> my_list.append(2.2)
+>>> my_list.append(-5)
+>>> my_list.append(6.1)
+>>> print(my_list)
+[-1, 3, 2.2, -5, 6.1]
+>>> my_list.print_sorted()
+[-5, -1, 2.2, 3, 6.1]
+>>> print(my_list)
+[-1, 3, 2.2, -5, 6.1]
+
+For string
+
+>>> my_list = MyList()
+>>> my_list.append("hello")
+>>> my_list.append("ali")
+>>> my_list.append("how")
+>>> my_list.append("are")
+>>> my_list.append("you")
+>>> print(my_list)
+['hello', 'ali', 'how', 'are', 'you']
+>>> my_list.print_sorted()
+['ali', 'are', 'hello', 'how', 'you']
+>>> print(my_list)
+['hello', 'ali', 'how', 'are', 'you']
+
+>>> my_list = MyList("hello")
+>>> print(my_list)
+['h', 'e', 'l', 'l', 'o']
+>>> my_list.print_sorted()
+['e', 'h', 'l', 'l', 'o']
+
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
