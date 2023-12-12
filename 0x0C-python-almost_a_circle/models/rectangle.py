@@ -12,12 +12,11 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-
         super().__init__(id)
 
-    """ define width as private attr """
     @property
     def width(self):
+        """ to get width value"""
         return self.__width
 
     @width.setter
@@ -28,9 +27,9 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = width
 
-    """ define height as private attr """
     @property
     def height(self):
+        """ to get height value """
         return self.__height
 
     @height.setter
@@ -41,9 +40,9 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = height
 
-    """ define x as private attr """
     @property
     def x(self):
+        """ to get x value """
         return self.__x
 
     @x.setter
@@ -54,9 +53,9 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
         self.__x = x
 
-    """ define y as private attr """
     @property
     def y(self):
+        """ to get y value """
         return self.__y
 
     @y.setter
@@ -67,12 +66,12 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = y
 
-    """ define Rectangle area """
     def area(self):
+        """ calcul area of rectangle """
         return (self.width * self.height)
 
-    """ define display method """
     def display(self):
+        """ display the character # """
         print(("\n" * self.y), end='')
         print(((" " * self.x) + ("#" * self.width) + "\n") *
               self.height, end='')
@@ -82,6 +81,7 @@ class Rectangle(Base):
                 self.x, self.y, self.width, self.height))
 
     def update(self, *args, **kwargs):
+        """ update class Rectangle attribut """
         if args:
             for i in range(len(args)):
                 if i == 0:
