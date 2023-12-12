@@ -42,7 +42,8 @@ class Base():
         """ return list of json representation """
         if json_string is None or json_string == '':
             return ("[]")
-        if type(json_string) != str:
+        if type(json_string) != str and all(type(x) != dict
+                                            for x in json_string):
             raise TypeError("json string must be string of list dictionnary")
         return (json.loads(json_string))
 
