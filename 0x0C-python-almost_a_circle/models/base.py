@@ -40,10 +40,9 @@ class Base():
     @staticmethod
     def from_json_string(json_string):
         """ return list of json representation """
-        if json_string is None or json_string == '':
+        if json_string is None and json_string == '':
             return ("[]")
-        if type(json_string) != str and all(type(x) != dict
-                                            for x in json_string):
+        if type(json_string) != str:
             raise TypeError("json string must be string of list dictionnary")
         return (json.loads(json_string))
 
