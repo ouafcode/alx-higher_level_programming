@@ -21,7 +21,7 @@ class Base():
         """ return Json string """
         if list_dictionaries is None or list_dictionaries == []:
             return ("[]")
-        if (type(list_dictionaries) != list and not all(type(x) == dict
+        if (type(list_dictionaries) != list or not all(type(x) == dict
            for x in list_dictionaries)):
             raise TypeError("list_dictionaries must be a list of dictionaries")
         return (json.dumps(list_dictionaries))

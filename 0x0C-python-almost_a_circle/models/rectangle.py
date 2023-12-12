@@ -85,6 +85,8 @@ class Rectangle(Base):
         if args:
             for i in range(len(args)):
                 if i == 0:
+                    if type(args[i]) is not int:
+                        raise TypeError("id must be an integer")
                     self.id = args[0]
                 elif i == 1:
                     self.width = args[1]
@@ -97,6 +99,8 @@ class Rectangle(Base):
         else:
             for key, value in kwargs.items():
                 if key == "id":
+                    if type(value) is not int:
+                        raise TypeError("id must be an integer")
                     self.id = value
                 elif key == "width":
                     self.width = value

@@ -30,6 +30,8 @@ class Square(Rectangle):
         if args:
             for i in range(len(args)):
                 if i == 0:
+                    if type(args[0]) != int and args[0] is not None:
+                        raise TypeError("id must be an integer")
                     self.id = args[0]
                 elif i == 1:
                     self.width = args[1]
