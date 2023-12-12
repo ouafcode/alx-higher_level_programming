@@ -121,7 +121,7 @@ class Base():
         from random import randrange
 
         p = turtle.Turtle()
-        p.color("beige")
+        p.color("light green")
         turtle.bgcolor("violet")
         p.shape("square")
         p.pensize(8)
