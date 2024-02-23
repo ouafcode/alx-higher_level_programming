@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """Python file contain state class """
 
-from relationship_city import City
 from enum import unique
 from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
-
-
-Base = declarative_base()
+from relationship_city import Base, City
 
 
 class State(Base):
